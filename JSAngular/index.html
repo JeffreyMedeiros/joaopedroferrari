@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Todo List">
+
+<head>
+    <title>calculadora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div  class="row">
+            <section class="content">
+                <h1>Calculadora</h1>
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div>
+                                <div class="pull-left">
+                                    <div class="form-inline" style="margin-top:20px">
+                                    </div>
+                                </div>
+                                <div class="pull-left">
+                                    <div class="btn-group">
+                                        <a href="#!subtracao" class="btn btn-success btn-filter">Subtração</a>
+                                        <a href="#!soma" class="btn btn-warning btn-filter">Soma</a>
+                                        <a href="#!multiplicacao" class="btn btn-danger btn-filter">Multiplicação</a>
+                                        <a href="#!divisao" class="btn btn-primary">Divisão</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-container" ng-view>     
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="rota.js"></script>
+    <script src="subController.js"></script>
+    <script src="multController.js"></script>
+    <script src="somController.js"></script>
+    <script src="divController.js"></script>
+</body>
+</html>

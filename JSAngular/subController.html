@@ -1,0 +1,11 @@
+<div ng-controller="SubController">
+    <div>
+      <label>Valor A:</label>
+       <input  type="text" id="Valor A" ng-model="calcular.valorA"/>
+    <label>Valor B:</label>
+    <input type="text" id="Valor B" ng-model="calcular.valorB"/>
+        <button ng-click="subtracao(calcular)"><b>Calcular</b></button>
+        <p>Resultado: {{calcular.resultado}}</p>
+    </div>
+</div>
+

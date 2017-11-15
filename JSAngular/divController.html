@@ -1,0 +1,10 @@
+<div ng-controller="DivController">
+    <div>
+      <label>Valor A:</label>
+       <input  type="text" id="valorA" ng-model="calcular.valorA"/>
+    <label>Valor B:</label>
+    <input type="text" id="valorB" ng-model="calcular.valorB"/>
+        <button ng-click="divisao(calcular)">Calcular</button>
+        <p>Resultado: {{calcular.resultado}}</p>
+    </div>
+    </div>
